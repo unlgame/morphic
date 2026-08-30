@@ -2,7 +2,7 @@
 services:
   morphic:
     image: ghcr.io/unlgame/morphic:latest
-    command: npx next start -H 0.0.0.0
+    command: node node_modules/next/dist/bin/next start -H 0.0.0.0
     env_file: .env
     environment:
       # Database connection for Docker Compose (override any cloud DB from .env.local)
