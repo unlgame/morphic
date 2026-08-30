@@ -245,23 +245,6 @@
       ry: 0;
     }
   }
-  @keyframes lookAround {
-    0%,
-    100% {
-      transform: translateX(0);
-    }
-    18%,
-    30% {
-      transform: translateX(6px);
-    }
-    48%,
-    60% {
-      transform: translateX(-6px);
-    }
-    78% {
-      transform: translateX(0);
-    }
-  }
 }
 
 @utility animate-blink {

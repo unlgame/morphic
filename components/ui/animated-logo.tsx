@@ -54,30 +54,22 @@ export function AnimatedLogo({
       {...props}
     >
       <circle cx="128" cy="128" r="128" fill="black"></circle>
-      <g
-        className={cn(
-          'origin-center',
-          animate &&
-            'animate-[lookAround_2.8s_var(--motion-ease-in-out)_infinite] will-change-transform motion-reduce:animate-none motion-reduce:will-change-auto'
-        )}
-      >
-        <ellipse
-          cx="102"
-          cy="128"
-          rx="18"
-          ry="18"
-          fill="white"
-          className={cn(!animate && isBlinking && 'animate-blink')}
-        ></ellipse>
-        <ellipse
-          cx="154"
-          cy="128"
-          rx="18"
-          ry="18"
-          fill="white"
-          className={cn(!animate && isBlinking && 'animate-blink')}
-        ></ellipse>
-      </g>
+      <ellipse
+        cx="102"
+        cy="128"
+        rx="18"
+        ry="18"
+        fill="white"
+        className={cn(!animate && isBlinking && 'animate-blink')}
+      ></ellipse>
+      <ellipse
+        cx="154"
+        cy="128"
+        rx="18"
+        ry="18"
+        fill="white"
+        className={cn(!animate && isBlinking && 'animate-blink')}
+      ></ellipse>
     </svg>
   )
 }
