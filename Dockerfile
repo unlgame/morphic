@@ -45,4 +45,4 @@ exec "$@"\n' > /app/docker-entrypoint.sh && chmod +x /app/docker-entrypoint.sh
 
 # Start production server with migration
 ENTRYPOINT ["/app/docker-entrypoint.sh"]
-CMD ["npx", "next", "start", "-H", "0.0.0.0"]
+CMD ["node", "node_modules/next/dist/bin/next", "start", "-H", "0.0.0.0"]
