@@ -1,8 +1,7 @@
 # Docker Compose configuration for the morphic-stack development environment
 services:
   morphic:
-    build: .
-    image: morphic:local
+    image: ghcr.io/unlgame/morphic:latest
     command: npx next start -H 0.0.0.0
     env_file: .env
     environment:
